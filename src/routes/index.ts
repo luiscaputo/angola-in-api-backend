@@ -1,7 +1,8 @@
-import { Router } from 'express';
-import baseRoute from './base.routes';
+import identificationRoutes from '~/modules/personalIdentification/identification.routes';
 import userRoutes from '~/modules/users/http/routes';
-import identificationRoutes from '~/modules/identification/identification.routes';
+import { Router } from 'express';
+
+import baseRoute from './base.routes';
 
 const routes = Router();
 
