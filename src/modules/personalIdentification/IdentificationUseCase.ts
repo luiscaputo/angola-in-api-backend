@@ -1,3 +1,4 @@
+import { GetBBIInformation } from '~/helpers/apis';
 import { AppErrors } from '~/shared/errors/errors';
 import axios from 'axios';
 
@@ -16,9 +17,7 @@ export default class IdentificationUseCase {
     }
     const formatIdentificationNumber = identificationNumver.toUpperCase();
 
-    const raw = await axios.get(
-      `${process.env.SEPE}${formatIdentificationNumber}`
-    );
+    const raw = await GetBBIInformation(formatIdentificationNumber);
 
     if (raw.status !== 200) {
       throw new AppErrors(messages.invalidIdentificationNumber, 400);
