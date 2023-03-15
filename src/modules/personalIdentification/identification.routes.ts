@@ -4,9 +4,6 @@ import IdentificationController from './IdentificationController';
 
 const router: Router = Router();
 
-router.get(
-  '/identification/:identificationNumber',
-  new IdentificationController().handle
-);
+router.get('/identification/person/:bi', new IdentificationController().handle);
 
 export default router;
