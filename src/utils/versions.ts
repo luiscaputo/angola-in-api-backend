@@ -1,3 +1,3 @@
 export const versions = {
-    current: '/v1',
-  };
+  current: '/v1',
+};
