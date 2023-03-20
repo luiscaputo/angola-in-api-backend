@@ -3,9 +3,9 @@ import { Request, Response } from 'express';
 import LocationsUseCase from './LocationsUseCase';
 
 export default class LocationsControllers {
-  async handleProvinces(_: Request, res: Response) {
+  async handle(_: Request, res: Response) {
     const useCase = new LocationsUseCase();
-    const result = await useCase.executeProvinces();
+    const result = await useCase.execute();
 
     return res
       .status(200)
