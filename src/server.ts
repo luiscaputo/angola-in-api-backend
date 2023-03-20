@@ -4,7 +4,7 @@ import app from './app';
 
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 3331;
+const PORT = process.env.PORT || 3338;
 
 server.listen(PORT, () => {
   console.log(` === SERVER IS RUNNING ON PORT [${PORT}] === `);
