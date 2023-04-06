@@ -60,6 +60,18 @@ export default {
           operatorWebSite: { type: 'string' },
         },
       },
+      SuperMarkets: {
+        type: 'object',
+        properties: {
+          designation: { type: 'string' },
+          tupology: { type: 'string' },
+          details: { type: 'string' },
+          rllt__details1: { type: 'string' },
+          rllt__details2: { type: 'string' },
+          image: { type: 'string' },
+          Thumbnail: { type: 'string' },
+        },
+      },
     },
   },
 };
