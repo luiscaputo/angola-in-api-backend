@@ -4,6 +4,8 @@ import infos from './infos';
 import provincesRoutes from './locations';
 import servers from './servers';
 import tags from './tags';
+import phoneNumberRoutes from './phoneNumber';
+import superMarketsRoutes from './markets';
 
 export default {
   ...infos,
@@ -13,5 +15,7 @@ export default {
   paths: {
     ...identificationRoutes,
     ...provincesRoutes,
+    ...phoneNumberRoutes,
+    ...superMarketsRoutes
   },
 };
