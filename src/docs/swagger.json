@@ -1,0 +1,513 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Test-NodeJs_Challenge_20201030",
+    "description": "Documentation from NodeJs_Challenge_20201030 Time <br><br> https://github.com/andersonigfrancisco <br><br> repository: https://github.com/andersonigfrancisco/NodeJs_Challenge_20201030"
+  },
+  "host": "localhost:3333/v1",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "bearerFormat": "header"
+    }
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/auth/create-account": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "admin": {
+                "type": "boolean"
+              },
+              "password": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/categories": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/category": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/delete-Categories": {
+      "delete": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/update-Categories": {
+      "put": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/purchasePlace": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/purchasePlaces": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/delete-PurchasePlaces": {
+      "delete": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/update-PurchasePlaces": {
+      "put": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/citys": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/city": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "PurchasePlaces_id": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/delete-Cities": {
+      "delete": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/update-Cities": {
+      "put": {
+        "tags": [],
+        "description": "",
+        "produces": [
+          "application/xml"
+        ],
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "type": "obj",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "PurchasePlaces_id": {
+                "type": "string"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "security": [
+          {
+            "Bearer": []
+          }
+        ],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "400": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  }
+}
