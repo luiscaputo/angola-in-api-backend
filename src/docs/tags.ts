@@ -15,5 +15,8 @@ export default {
     {
       name: 'ExchangeCurrency',
     },
+    {
+      name: 'Markets'
+    }
   ],
 };
